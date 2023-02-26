@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <title>NIM</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS v5.2.1 -->
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js"></script>
+
+
+</head>
+
+<body>
+    <header>
+        <h1 class="text-center mt-5">Jogo NIM</h1>
+    </header>
+
+    <main>
+        <div class="corpo d-flex justify-content-center mt-5">
+            <div class="container">
+                    
+                <!-- Hub -->
+                <div class="row d-flex justify-content-between" id="hub">
+                    <div class="col-3 text-center" id="hub1">
+                        <h3>Jogador 1</h3>
+                        <p id="point0">Palitos retirados: 0</p>
+                    </div>
+                    <div class="col-3 text-center" id="hub2">
+                        <h3>Jogador 2</h3>
+                        <p id="point1">Palitos retirados: 0</p>
+                    </div>
+                </div>
+                
+                <!-- Palitos -->
+                <div class="row d-flex align-items-center justify-content-center mt-5" id="palitos">
+                    <div id="box"><a name="" id="play" class="btn btn-primary" role="button" onmousedown = "play()">Jogar</a></div>
+                    <div class="col" id="quinto">
+                        <ul id="campos">
+                            <li><img id="img-01" class="fosf" onmouseover="marcaPalito(0, 1)" onmouseout="desmarcaPalito(0, 1)" onmousedown="removePalito(0, 1)" src="images/fosforo.png" alt=""></li>
+                            <li><img id="img-02" class="fosf" onmouseover="marcaPalito(0, 2)" onmouseout="desmarcaPalito(0, 2)" onmousedown="removePalito(0, 2)" src="images/fosforo.png" alt=""></li>
+                            <li><img id="img-03" class="fosf" onmouseover="marcaPalito(0, 3)" onmouseout="desmarcaPalito(0, 3)" onmousedown="removePalito(0, 3)" src="images/fosforo.png" alt=""></li>
+                            <li><img id="img-04" class="fosf" onmouseover="marcaPalito(0, 4)" onmouseout="desmarcaPalito(0, 4)" onmousedown="removePalito(0, 4)" src="images/fosforo.png" alt=""></li>
+                            <li><img id="img-05" class="fosf" onmouseover="marcaPalito(0, 5)" onmouseout="desmarcaPalito(0, 5)" onmousedown="removePalito(0, 5)" src="images/fosforo.png" alt=""></li>
+                        </ul>
+                    </div>
+                    <div class="col" id="terceiro">
+                        <ul id="campos">
+                            <li><img id="img-11" class="fosf" onmouseover="marcaPalito(1, 1)" onmouseout="desmarcaPalito(1, 1)" onmousedown="removePalito(1, 1)" src="images/fosforo.png" alt=""></li>
+                            <li><img id="img-12" class="fosf" onmouseover="marcaPalito(1, 2)" onmouseout="desmarcaPalito(1, 2)" onmousedown="removePalito(1, 2)" src="images/fosforo.png" alt=""></li>
+                            <li><img id="img-13" class="fosf" onmouseover="marcaPalito(1, 3)" onmouseout="desmarcaPalito(1, 3)" onmousedown="removePalito(1, 3)" src="images/fosforo.png" alt=""></li>
+                            <li><img id="img-14" class="fosf" onmouseover="marcaPalito(1, 4)" onmouseout="desmarcaPalito(1, 4)" onmousedown="removePalito(1, 4)" src="images/fosforo.png" alt=""></li>
+                        </ul>
+                    </div>
+                    <div class="col" id="terceiro">
+                        <ul id="campos">
+                            <li><img id="img-21" class="fosf" onmouseover="marcaPalito(2, 1)" onmouseout="desmarcaPalito(2, 1)" onmousedown="removePalito(2, 1)" src="images/fosforo.png" alt=""></li>
+                            <li><img id="img-22" class="fosf" onmouseover="marcaPalito(2, 2)" onmouseout="desmarcaPalito(2, 2)" onmousedown="removePalito(2, 2)" src="images/fosforo.png" alt=""></li>
+                            <li><img id="img-23" class="fosf" onmouseover="marcaPalito(2, 3)" onmouseout="desmarcaPalito(2, 3)" onmousedown="removePalito(2, 3)" src="images/fosforo.png" alt=""></li>
+                        </ul>
+                    </div>
+                    <div class="col" id="segundo">
+                        <ul id="campos">
+                            <li><img id="img-31" class="fosf" onmouseover="marcaPalito(3, 1)" onmouseout="desmarcaPalito(3, 1)" onmousedown="removePalito(3, 1)" src="images/fosforo.png" alt=""></li>
+                            <li><img id="img-32" class="fosf" onmouseover="marcaPalito(3, 2)" onmouseout="desmarcaPalito(3, 2)" onmousedown="removePalito(3, 2)" src="images/fosforo.png" alt=""></li>
+                        </ul>
+                    </div>
+                    <div class="col" id="primeiro">
+                        <ul id="campos">
+                            <li><img id="img-41" class="fosf" onmouseover="marcaPalito(4, 1)" onmouseout="desmarcaPalito(4, 1)" onmousedown="removePalito(4, 1)" src="images/fosforo.png" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Vez de quem -->
+                <div class="row">
+                    <div class="col text-center mt-5">
+                        <h2 id="quemJoga"></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+    </footer>
+
+    
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+.fosf{
+    border-radius: 5px;
+    height: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#palitos{
+    width: 900px;
+    height: 300px;
+    margin: auto;
+    background-color: #024702;
+}
+
+#campos{
+    list-style: none;
+}
+
+#segundo, #primeiro, #terceiro, #quarto{
+    margin-left: -50px;
+}
+
+#box{
+    width: 900px;
+    height: 300px;
+    margin: auto;
+    background-color: white;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#play{
+    width: 200px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    background-color: green;
+    font-weight: bold;
+}
+
+#hub1, #hub2{
+    border: solid 1px black;
+    border-radius: 5px;
+    padding-top: 5px;
+    background-color: yellow;
+}
+
+#hub{
+    width: 900px;
+    margin: auto;
+}
